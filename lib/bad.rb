@@ -3,7 +3,7 @@
 # Copyright, 2025, by Samuel Williams.
 # Released under the MIT License.
 
-require_relative "../ext/bad"
+require "bad/bad"
 
 module Bad
 end

@@ -21,7 +21,9 @@ Gem::Specification.new do |spec|
 		"source_code_uri" => "https://github.com/ioquatix/bad.git",
 	}
 	
-	spec.files = Dir.glob(["{lib}/**/*", "*.md"], File::FNM_DOTMATCH, base: __dir__)
+	spec.files = Dir.glob(["{lib}/**/*", "{ext}/**/*.{c,h,rb}", "*.md"], File::FNM_DOTMATCH, base: __dir__)
 	
 	spec.required_ruby_version = ">= 3.1"
+	
+	spec.extensions = ["ext/extconf.rb"]
 end

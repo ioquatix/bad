@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
-require 'mkmf'
+require "mkmf"
 
-extension_name = 'bad'
-dir_config(extension_name)
+gem_name = "bad"
+extension_name = "bad"
 
-create_makefile(extension_name)
+create_makefile("#{gem_name}/#{extension_name}", extension_name)
